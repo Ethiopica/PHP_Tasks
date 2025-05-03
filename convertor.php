@@ -43,7 +43,7 @@ if (isset($_POST['submit'])) {
                 return $value / $speedConversions[$from] * $speedConversions[$to];
             }
 
-            // Weight conversion
+            // Mass conversion
             if (in_array($from, $massUnits) && in_array($to, $massUnits)) {
                 return $value / $massConversions[$from] * $massConversions[$to];
             }
@@ -79,6 +79,7 @@ if (isset($_POST['submit'])) {
             justify-content: center;
             align-items: center;
             height: 100vh;
+            background: linear-gradient(135deg, #327444, #a6e0a5);
         }
 
         .converter {
@@ -107,6 +108,7 @@ if (isset($_POST['submit'])) {
 
         .converter button {
             background-color: #2196F3;
+            background: linear-gradient(135deg, #327444, #a6e0a5);
             color: white;
             border: none;
             cursor: pointer;
